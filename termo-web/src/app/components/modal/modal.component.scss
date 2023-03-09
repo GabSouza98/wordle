@@ -1,0 +1,38 @@
+* {
+    color: white;
+    background-color: #081d27; 
+}
+
+.user-data-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-data-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.data {
+    font-size: 30px;
+    margin: 0;
+}
+
+.data-label {
+    margin: 0;
+}
+
+#btnFechar {
+    background-color: #2a9d8f;
+    color: white;
+}
+
+#btnNovoJogo {
+    background-color: #f4a261;
+    color: white;
+}

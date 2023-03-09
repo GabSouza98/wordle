@@ -1,0 +1,32 @@
+openapi: 3.0.1
+info:
+  title: Wordle
+  description: This is a sample server for a wordle game.
+  version: 1.0.1
+
+paths:
+  /words:
+    post:
+      operationId: saveWords
+      description: Saves the word or list of words in the database.
+      tags:
+        - WORDS
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: string
+      responses:
+        '200':
+          description: Saved succesfully.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+
+

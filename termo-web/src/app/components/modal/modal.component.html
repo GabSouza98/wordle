@@ -1,0 +1,38 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+<div class="modal-header">
+    <h4 class="modal-title" id="modalLabel"> Dados do usuário </h4>    
+</div>
+
+<div class="modal-body">
+    <div class="user-data-container">
+
+        <div class="user-data-item">
+            <p class="data-label">Total de jogos: </p>  
+            <p class="data">{{userInfo.totalGames}}</p>
+        </div>
+
+        <div class="user-data-item">
+            <p class="data-label">Total de vitórias: </p> 
+            <p class="data">{{userInfo.totalWins}}</p>
+        </div>
+
+        <div class="user-data-item">
+            <p class="data-label">Taxa de vitória: </p> 
+            <p class="data">{{userInfo.percentWin}}%</p>
+        </div>
+    </div>
+
+    <div id="divChart">
+        <canvas id="myChart"></canvas>
+    </div>
+
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-xs" id="btnFechar"
+    (click)="activeModal.close()">Fechar</button>
+
+    <button [disabled]="checkNewGame()" type="button" class="btn btn-xs" id="btnNovoJogo"
+    (click)="startNewGame()">Novo jogo</button>
+</div>

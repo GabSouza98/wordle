@@ -1,0 +1,1 @@
+INSERT INTO Words (word) VALUES (?)
