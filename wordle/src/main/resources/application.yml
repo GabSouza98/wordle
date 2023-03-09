@@ -1,18 +1,10 @@
 spring:
   profiles:
     active: local
-#  datasource:
-#    url: jdbc:sqlserver://localhost:51704;databaseName=Wordle;trustServerCertificate=true
-#    username: sa
-#    password: 1234qwer%@
-#    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
   datasource:
     url: ${URL}
     username: ${USERNAME}
     password: ${PASSWORD}
-#    url: jdbc:postgresql://localhost:5432/wordle-postgres
-#    username: wordle-postgres
-#    password: wordle-postgres
     driverClassName: org.postgresql.Driver
   mvc:
     pathmatch:
