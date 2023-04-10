@@ -64,6 +64,10 @@ export class AppComponent {
 
   }
 
+
+
+  // A F E I A
+
   onClick(event: Event) {
 
     var div = event.target as HTMLElement;
